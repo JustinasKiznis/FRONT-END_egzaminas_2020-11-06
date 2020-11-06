@@ -22,9 +22,9 @@ function loadDoc(recepto_pavadinimas) {
                 txt += "<tr scope='row'>" + "<th scope='col' class='col-1'>" + x +"</th>";
                 txt += "<td scope=\"col\" class='col-4'>" + receptai[x].title + "</td>";
                 txt += "<td scope=\"col\" class='col-3'>"  +"<img src='" + receptai[x].thumbnail + "'>" +"</td>";
-                txt += "<td scope=\"col\" class='col-4'>"+ receptai[x].ingredients + "</td> </tr>";
+                txt += "<td scope=\"col\" class='col-4'>" + receptai[x].ingredients + "</td> </tr>";
             }
-            txt += "    </tbody>";
+            txt += "</tbody></table>";
             document.getElementById("Sarasas").innerHTML = txt;
         }
     };
